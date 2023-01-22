@@ -1,0 +1,88 @@
+h1 {
+
+    background-color: #11A4F5;
+    font-size: 100px;
+    color:white;  
+    text-align: center;
+
+}
+
+nav li{
+
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px;
+    text-align: center;
+
+}
+
+nav a {
+
+    color: #F5971D;
+
+}
+
+body {
+    float: center;
+    margin-left: 25px;
+    color: rgb(17,164,245,96%)   
+    
+}
+
+img {
+
+    width: 200px;
+    margin: 200 px auto;
+    min-height: 100px;
+
+}
+
+.banner {
+
+    width: 600px;
+    margin: 100 px auto;
+    float: center;
+    
+}
+
+.banner-container {
+
+    margin: auto;
+    text-align: center;
+
+}
+
+p {
+
+    text-align: center;
+    color:rgb(245, 151, 29, 96%)
+}
+
+.facts {
+    border: 3px solid white;
+    display: inline-block;
+    text-align: center;
+}
+
+.row {
+
+    display: flex; 
+    margin: auto;
+    border: 2px solid white;
+    padding: 5px;   
+    text-align: center;
+}
+
+.grid-image {
+
+    margin: 5px;
+
+}
+
+.imgcard {
+
+    border: 2px solid white;
+    margin: 20px;
+    text-align: center;         
+
+}
