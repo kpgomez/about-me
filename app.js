@@ -9,10 +9,11 @@ function askForDonation(){
     
     if (query=='yes') {
         message = ("Your generosity is much appreciated!");
+        document.write(message)
 } else {
-    message = "Please reconsider. A small donation goes a long way!"
-}
 
-document.write(message);
+    askForDonation()
+    //message = "Please reconsider. A small donation goes a long way!"
+}
 
 }
