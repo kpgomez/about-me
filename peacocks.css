@@ -25,7 +25,7 @@ nav a {
 body {
     float: center;
     margin-left: 25px;
-    color: rgb(17,164,245,96%)   
+    color: #F5971D;
     
 }
 
@@ -55,13 +55,16 @@ img {
 p {
 
     text-align: center;
-    color:rgb(245, 151, 29, 96%)
+    color:#F5971D
 }
 
 .facts {
+    
     border: 3px solid white;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
 }
 
 .row {
@@ -71,6 +74,9 @@ p {
     border: 2px solid white;
     padding: 5px;   
     text-align: center;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .grid-image {
@@ -85,4 +91,21 @@ p {
     margin: 20px;
     text-align: center;         
 
+}
+
+h2 {
+    background-color: #11A4F5;
+    font-size: 30px;
+    color:white;  
+    text-align: center; 
+}
+
+div {
+
+    text-align: center;
+}
+
+.row {
+
+    text-align: center;
 }
