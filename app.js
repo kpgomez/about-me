@@ -123,6 +123,6 @@ function showGratitude(amount){
         //document.write(i);
         output += "🦚";
     }    
-    return document.write(output);
+    return document.write("❤️ " + output);
 }
 
