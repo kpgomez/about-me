@@ -110,7 +110,7 @@ function askForMore() {
 }
 
 function sayThankYou(amount){
-	document.write("Thank you for your $" + amount + " donation")
+	document.write("Thank you for your $" + amount + " donation! ")
 }
 
 //for (let i = 0; i <= amount; i++){
