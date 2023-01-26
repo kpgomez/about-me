@@ -71,8 +71,9 @@ function askDonation(){
 	answer = answer.toLowerCase();
 	if (answer == 'yes'){
 		askAmount();
+        showGratitude(amount);
 	} else {
-		document.write("We hope you will reconsider in the future.");
+		document.write("We hope you will reconsider donating in the future.");
 		//document.write("Thanks for visiting!")
 	}
 }
@@ -80,7 +81,9 @@ function askDonation(){
 function askAmount() {
 	amount = prompt("How much would you like to donate?");
 	if (amount >= 5) {
-		document.write("Thank you for your $" + amount + " donation!")
+		//document.write("Thank you for your $" + amount + " donation!")
+        sayThankYou(amount);
+        showGratitude(amount);
 	}
 	else {
 		askForMore();
@@ -88,18 +91,38 @@ function askAmount() {
 
 }
 
+
 function askForMore() {
-	i = 0;
+	//i = 0;
+    let i = 0;
 	while (i < 5) {
 		beg = prompt("Please give us MORE. How much can really give?");
-		if (beg > 5) {
-			document.write("Thank you for your " + amount + " donation!");
-		} else {
-		 	askForMore();
-		}
-	}
+		if (beg >= 5) {
+			//document.write("Thank you for your " + amount + " donation!");
+            sayThankYou(beg);
+            amount = beg;
+            i =+ beg;
+		} //else {
+		 	//beg();
+		//}
+	//}
+}
 }
 
 function sayThankYou(amount){
 	document.write("Thank you for your $" + amount + " donation")
 }
+
+//for (let i = 0; i <= amount; i++){
+  //  document.write('<img src="$');
+//}
+function showGratitude(amount){
+    let output = '';
+    let level = amount;
+    for (let i = 0; i <= amount; i++){
+        //document.write(i);
+        output += "🦚";
+    }    
+    return document.write(output);
+}
+

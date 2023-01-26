@@ -2,19 +2,18 @@
 function askDonation(){
 	answer = prompt("Would you like to donate?");
 	answer = answer.toLowerCase();
-	if (answer == 'yes' || 'y'){
+	if (answer == 'yes'){
 		askAmount();
-	} 
-	else {
+	} else {
 		document.write("We hope you will reconsider in the future.");
-		document.write("Thanks for visiting!")
+		//document.write("Thanks for visiting!")
 	}
 }
 
 function askAmount() {
 	amount = prompt("How much would you like to donate?");
 	if (amount >= 5) {
-		document.write("Thank you for your " + amount + " donation!")
+		document.write("Thank you for your $" + amount + " donation!")
 	}
 	else {
 		askForMore();
@@ -23,12 +22,17 @@ function askAmount() {
 }
 
 function askForMore() {
-	while (amount < 5) {
+	i = 0;
+	while (i < 5) {
 		beg = prompt("Please give us MORE. How much can really give?");
 		if (beg > 5) {
 			document.write("Thank you for your " + amount + " donation!");
 		} else {
-		 	;askForMore()
+		 	askForMore();
 		}
 	}
+}
+
+function sayThankYou(amount){
+	document.write("Thank you for your $" + amount + " donation")
 }
